@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Miniwebhely - Kapcsolat</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="logo">Miniwebhely</div>
+		<nav aria-label="Főnavigáció">
+			<ul>
+				<li><a href="index.html">Főoldal</a></li>
+				<li><a href="contact.html">Kapcsolat</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h1>Kapcsolat</h1>
+			<p>Ez egy egyszerű kontakt oldal, amin a form mezőit és az alapvető validációt tudjuk gyakorolni.</p>
+		</section>
+
+		<section aria-labelledby="uzenetkuldes-cim">
+			<h2 id="uzenetkuldes-cim">Üzenet küldése</h2>
+			<form action="#" method="post">
+				<p>
+					<label for="nev">Felhasználónév</label><br>
+					<input type="text" id="nev" name="nev" required autocomplete="username">
+				</p>
+
+				<p>
+					<label for="email">E-mail cím</label><br>
+					<input type="email" id="email" name="email" required autocomplete="email">
+				</p>
+
+				<p>
+					<label for="uzenet">Üzenet</label><br>
+					<textarea id="uzenet" name="uzenet" rows="5" required></textarea>
+				</p>
+
+				<button type="submit">Küldés</button>
+			</form>
+		</section>
+
+		<p><a href="index.html">Vissza a főoldalra</a></p>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 Miniwebhely</p>
+	</footer>
+</body>
+</html>
